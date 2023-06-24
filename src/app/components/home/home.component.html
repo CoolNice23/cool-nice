@@ -1,0 +1,402 @@
+<section class="section promo">
+  <div class="container">
+    <div class="row flex-nowrap">
+      <div class="col-12 col-md-6 section__content">
+        <h1 class="promo__title">
+          Установка та обслуговування кондиціонерів
+        </h1>
+        <h4 class="section__subtitle">
+          Дихайте легше, живіть краще!
+          <br>
+          Ваш комфорт - наша мета
+        </h4>
+        <a href="tel:+380983584020" class="btn btn-primary section__btn">
+          Зателефонувати
+        </a>
+      </div>
+      <!--<img class="section__image" src="assets/1.png" alt="home image">-->
+    </div>
+  </div>
+</section>
+<section class="section about">
+  <div class="pattern"></div>
+  <div class="container">
+    <h2 class="about__title">
+      Чому обирають нас
+    </h2>
+    <div class="row justify-content-between about__cells about__cells-first">
+      <div class="col-12 col-lg-3">
+        <div class="cell">
+          <div class="cell__number">1</div>
+          <h5 class="cell__title">
+            Досвід і експертність
+          </h5>
+          <p class="cell__text">
+            Ми пропонуємо вам багаторічний досвід і високу експертність у сфері кондиціонування повітря
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="cell">
+          <div class="cell__number">2</div>
+          <h5 class="cell__title">
+            Гарантія якості
+          </h5>
+          <p class="cell__text">
+            Ми прагнемо досягти найвищих стандартів якості і забезпечити вам комфортне і здорове середовище в приміщенні
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="cell">
+          <div class="cell__number">3</div>
+          <h5 class="cell__title">
+            Задоволені клієнти
+          </h5>
+          <p class="cell__text">
+            Ваша задоволеність є для нас найважливішим пріоритетом, і ми зробимо все можливе, щоб перевершити ваші очікування і забезпечити вам комфортне кондиціонування повітря.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="about__title">
+        Наші послуги
+      </h2>
+      <button class="btn btn-sm btn-outline-light" (click)="openPriceModal()">
+        <div>Ціни</div>
+        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill="white"></path> </svg>
+      </button>
+    </div>
+
+    <div class="row justify-content-between about__cells about__cells-second">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="cell white">
+          <img class="cell__image" src="assets/cards/card-first.png" alt="service image">
+          <h5 class="cell__title">
+            Монтаж кондиціонерів
+            <img class="cell__icon" src="assets/key-tool.png" alt="key-tool">
+          </h5>
+          <p class="cell__text">
+            Робимо монтаж будь-якої складності. Розробляємо оптимальну систему кондиціонування повітря, враховуючи потреби клієнта, розташування приміщення та його особливості.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="cell white">
+          <img class="cell__image" src="assets/cards/card-second.png" alt="service image">
+          <h5 class="cell__title">
+            Сервісне обслуговування
+            <img class="cell__icon" src="assets/thermo-tool.png" alt="thermo-tool">
+          </h5>
+          <p class="cell__text">
+            Ми розуміємо важливість збереження оптимальної роботи кондиціонерів протягом тривалого періоду.
+            Проводимо діагностику, заправку фреоном, перевальцювання комунікацій.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="cell white">
+          <img class="cell__image" src="assets/cards/card-third.png" alt="service image">
+          <h5 class="cell__title">
+            Додаткові роботи
+            <img class="cell__icon" src="assets/screwdriver-tool.png" alt="screwdriver-tool">
+          </h5>
+          <p class="cell__text">
+            Окрім професійного монтажу, ми надаємо додаткові послуги, що підвищують ефективність та зручність використання вашої системи кондиціонування повітря.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conditioners" class="section conditioners">
+  <div class="container">
+    <h2 class="conditioners__title">
+      Популярні кондиціонери
+    </h2>
+    <div *ngIf="!isPhone" class="row justify-content-between conditioners__cells">
+      <div class="col-sm-6 col-lg-3">
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/1.png" alt="conditioners image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXF-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 18400 грн</h5>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/2.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXE2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19640 грн</h5>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19700 грн</h5>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19700 грн</h5>
+        </div>
+      </div>
+    </div>
+    <carousel class="conditioners__cells carousel" [isAnimated]="true" *ngIf="isPhone" [interval]="0" data-bs-ride="false">
+      <slide>
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/1.png" alt="conditioners image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXF-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 18400 грн</h5>
+        </div>
+      </slide>
+      <slide>
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/2.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXE2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19640 грн</h5>
+        </div>
+      </slide>
+      <slide>
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19700 грн</h5>
+        </div>
+      </slide>
+      <slide>
+        <div class="cell white">
+          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <h5 class="cell__title">
+            Cooper&Hunter
+          </h5>
+          <p class="cell__text">
+            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 19700 грн</h5>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</section>
+<section class="section contacts">
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h2 class="contacts__title mb-5">
+        Ми з радістю проконсультуємо Вас!
+      </h2>
+      <a class="btn btn-primary section__btn" href="tel:+380983584020"> Зателефонувати </a>
+    </div>
+  </div>
+</section>
+<section class="section review">
+  <div class="container">
+    <h2 class="review__title">
+      Відгуки клієнтів
+    </h2>
+    <div *ngIf="!isPhone" class="row justify-content-between review__cells">
+      <div class="col-sm-6 col-lg-4">
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/1.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Михайло
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Хотів встановити кондиціонер у своєму офісі і звернувся до цієї компанії. Враження від роботи були дуже позитивні. Спеціалісти компанії виявилися досвідченими та добре підготовленими. Вони проявили увагу до деталей та виконали установку швидко та ефективно.”
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/2.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Ірина
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Щиро раджу скористатися послугами цієї компанії, якщо вам потрібне обслуговування кондиціонера. Їх команда демонструє велику ефективність та професіоналізм. Я дуже задоволена!”
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/3.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Станіслав
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Робітники прибули вчасно, були ввічливими та доброзичливими. Вони виконали роботу швидко і професійно, а також дали корисні поради щодо експлуатації кондиціонера. Тепер у нашому будинку комфортна атмосфера завдяки встановленому кондиціонеру.“
+          </p>
+        </div>
+      </div>
+    </div>
+    <carousel class="review__cells carousel" [isAnimated]="true" *ngIf="isPhone" [interval]="0" data-bs-ride="false">
+      <slide>
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/1.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Михайло
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Хотів встановити кондиціонер у своєму офісі і звернувся до цієї компанії. Враження від роботи були дуже позитивні. Спеціалісти компанії виявилися досвідченими та добре підготовленими. Вони проявили увагу до деталей та виконали установку швидко та ефективно.”
+          </p>
+        </div>
+      </slide>
+      <slide>
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/2.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Ірина
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Щиро раджу скористатися послугами цієї компанії, якщо вам потрібне обслуговування кондиціонера. Їх команда демонструє велику ефективність та професіоналізм. Я дуже задоволена!”
+          </p>
+        </div>
+      </slide>
+      <slide>
+        <div class="cell white">
+          <div class="cell__user">
+            <img class="cell__avatar" src="assets/avatars/3.png" alt="avatar">
+            <div class="d-flex flex-column gap-2 ms-4">
+              <h5 class="cell__title">
+                Станіслав
+              </h5>
+              <div class="cell__rate">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+          </div>
+          <p class="cell__text">
+            “Робітники прибули вчасно, були ввічливими та доброзичливими. Вони виконали роботу швидко і професійно, а також дали корисні поради щодо експлуатації кондиціонера. Тепер у нашому будинку комфортна атмосфера завдяки встановленому кондиціонеру.“
+          </p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</section>
+
+<ng-template #prices>
+  <div class="servicesModal">
+    <div class="servicesModal__close" (click)="modalRef!.hide()"></div>
+    <h3 class="servicesModal__title">Монтаж кондиціонерів</h3>
+    <div *ngFor="let item of installServices" class="servicesModal__item">
+      <div class="servicesModal__option">{{item.option}}</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">{{item.price}} грн</div>
+    </div>
+    <h3 class="servicesModal__title">Додаткові работи</h3>
+    <div *ngFor="let item of additionalServices" class="servicesModal__item">
+      <div class="servicesModal__option">{{item.option}}</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">{{item.price}} грн</div>
+    </div>
+    <h3 class="servicesModal__title">Сервісне обслуговування</h3>
+    <div *ngFor="let item of serviceGeneral" class="servicesModal__item">
+      <div class="servicesModal__option">{{item.option}}</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">{{item.price}} грн</div>
+    </div>
+  </div>
+</ng-template>

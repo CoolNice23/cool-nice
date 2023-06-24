@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="logo">
+      </a>
+      <button #toggle class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="openPricesModal()">Ціни</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('services')">Наші послуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll('conditioners')">Кондиціонери</a>
+          </li>
+          <li class="btn btn-sm btn-primary ml-3">
+            <a href="tel:+380983584020">Зв'язатися с зами</a>
+          </li>
+          <li>
+            <a href="https://t.me/@CoolNiceKyiv" class="btn btn-sm btn-primary">
+              <img style="width: 20px; height: 20px" src="assets/footer-icons/telegram.svg" alt="telegram">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

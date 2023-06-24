@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+:root {
+  //primary colors
+  --main-text-color: #192C51;
+  --secondary-text-color: #AEB3CC;
+  --light-text-color: #FFFFFF;
+
+  --button-background-color: #0C43AF;
+  --button-text-color: #ffffff;
+  --secondary-title-text-color: #5C627F;
+  --background-dark-color: #192C51;
+
+  --decor-color: #284173;
+
+          // accent colors
+  --primary-button-color: #2B87DB;
+  --primary-info-color: #567BBC;
+  --primary-logo-color: #143757;
+  --primary-element-color: #FFBD00;
+  --success-green: #39b54a;
+  --error-red: #eb180d;
+  --error-dark-red: #bf140b;
+
+  //fonts
+  --primary-font: 'Inter';
+
+  //breakpoints
+  --large: 992px;
+  --medium: 768px;
+  --small: 576px;
+}
+
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: var(--main-text-color);
+
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  //height: 70px;
+}
+
+.navbar-brand {
+  img {
+    width: 172px;
+    height: auto;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  z-index: 20;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+
+  .navbar-nav {
+    gap: 10px;
+
+    .nav-link {
+      color: var(--main-text-color);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .nav-link.active {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 16px);
+        //transform: translateX(-50%);
+        //width: 70%;
+        height: 3px;
+        bottom: 0;
+        background-color: var(--main-text-color);
+      }
+    }
+  }
+}
+.btn {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border-color: var(--button-background-color);;
+  font-weight: 600;
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-padding-y: 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+
+  &-sm {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.5rem;
+  }
+
+  &-outline-light {
+    max-height: 40px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    display: flex;
+    gap: 10px;
+    transition-duration: .3s;
+    z-index: 100;
+
+    svg {
+      path {
+        transition-duration: .3s;
+      }
+    }
+
+    &:hover {
+      color: var(--main-text-color);
+      svg {
+        path {
+          fill: var(--main-text-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      align-items: center;
+      .nav-link {
+        display: inline;
+      }
+      .nav-link.active {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
