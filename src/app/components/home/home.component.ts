@@ -16,72 +16,100 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   installServices = [
     {
-      option: '07-09 (до 25 м²)',
+      option: '7-9',
       price: 3500
     },
     {
-      option: '12 (до 35 м²)',
-      price: 3700
+      option: '12 на 9⌀ трубі',
+      price: 4000
     },
     {
-      option: '18 (до 50 м²)',
-      price: 4400
+      option: '12 на 12⌀ трубі',
+      price: 4500
     },
     {
-      option: '24 (до 70 м²)',
+      option: '18 на 12⌀ трубі',
       price: 5000
     },
     {
-      option: '24 (до 70 м²)',
-      price: 5000
+      option: '18 на 16⌀ трубі',
+      price: 6000
     },
     {
-      option: '30 (от 80 м²)',
-      price: 5200
+      option: '24',
+      price: 6500
+    }
+  ];
+  installOnExistingTubes = [
+    {
+      option: '7-9',
+      price: 2300
+    },
+    {
+      option: '12',
+      price: 2500
+    },
+    {
+      option: '18',
+      price: 3200
+    },
+    {
+      option: '24',
+      price: 4500
+    }
+  ]
+  uninstallServices = [
+    {
+      option: '9',
+      price: 900
+    },
+    {
+      option: '12',
+      price: 1200
+    },
+    {
+      option: '18',
+      price: 1700
+    },
+    {
+      option: '24',
+      price: 2300
     }
   ];
   additionalServices = [
     {
-      option: 'дод. фреономагістраль 07, 09',
-      price: '500 грн за 1м'
+      option: 'Драбина',
+      price: '500 грн.'
     },
     {
-      option: 'дод. фреономагістраль 12,18',
-      price: '550 грн за 1м'
+      option: 'Склопакет',
+      price: 'від 300 грн. до 1000 грн. <br> (залежить від розміру)'
     },
     {
-      option: 'дод. фреономагістраль 24, 30',
-      price: '650 грн за 1м'
+      option: 'Промисловий альпінізм',
+      price: '3000 грн.'
     },
     {
-      option: 'штроба газоблок/цегла/бетон',
-      price: '200/250/300 грн за 1м'
-    },
-    {
-      option: '24 (до 70 м²)',
-      price: 5000
-    },
-    {
-      option: '30 (від 80 м²)',
-      price: 5200
+      option: 'Вилка + дріт до 5м.',
+      price: '300 грн.'
     }
   ];
-  serviceGeneral = [
+  additionalTube = [
     {
-      option: 'діагностика',
-      price: 'від 500 грн'
+      option: '6⌀ - 9⌀',
+      price: 450
     },
     {
-      option: 'демонтаж',
-      price: 'від 500 грн'
+      option: '12⌀ - 6⌀',
+      price: 550
     },
     {
-      option: 'заправка фреоном',
-      price: 'від 150 грн за 100 грам'
+      option: '16⌀ - 6⌀',
+      price: 750
     },
     {
-      option: 'перевальцювання комуникацій',
-      price: 'від 800 грн'
+      option: '19⌀ - 9⌀',
+      price: 900
     }
   ];
 

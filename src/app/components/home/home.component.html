@@ -124,100 +124,139 @@
     <div *ngIf="!isPhone" class="row justify-content-between conditioners__cells">
       <div class="col-sm-6 col-lg-3">
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/1.png" alt="conditioners image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/1.jpeg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
-            Cooper&Hunter
+            SAMSUNG
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXF-NG</strong>
+            Код товару:
+            <br>
+            <strong>AR09TXHQASINUA</strong>
           </p>
-          <h5 class="cell__price">Ціна: 18400 грн</h5>
+          <h5 class="cell__price">Ціна: 17500 грн</h5>
         </div>
       </div>
+
       <div class="col-sm-6 col-lg-3">
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/2.png" alt="conditioner image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/2.jpeg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
             Cooper&Hunter
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXE2-NG</strong>
+            Код товару:
+            <br>
+            <strong>CH-S09FTXLA2-NG</strong>
           </p>
-          <h5 class="cell__price">Ціна: 19640 грн</h5>
+          <h5 class="cell__price">Ціна: 26280 грн</h5>
         </div>
       </div>
+
       <div class="col-sm-6 col-lg-3">
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/3.jpg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
-            Cooper&Hunter
+            AUX
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+            Код товару:
+            <br>
+            <strong>ASW-H07A4/FAR1</strong>
           </p>
-          <h5 class="cell__price">Ціна: 19700 грн</h5>
+          <h5 class="cell__price">Ціна: 10000 грн</h5>
         </div>
       </div>
+
       <div class="col-sm-6 col-lg-3">
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/4.jpeg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
-            Cooper&Hunter
+            GREE
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
+            Код товару:
+            <br>
+            <strong>GWH09QB-K3DNA2G</strong>
           </p>
-          <h5 class="cell__price">Ціна: 19700 грн</h5>
+          <h5 class="cell__price">Ціна: 21000 грн</h5>
         </div>
       </div>
     </div>
     <carousel class="conditioners__cells carousel" [isAnimated]="true" *ngIf="isPhone" [interval]="0" data-bs-ride="false">
       <slide>
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/1.png" alt="conditioners image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/1.jpeg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
-            Cooper&Hunter
+            SAMSUNG
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXF-NG</strong>
+            Код товару:
+            <br>
+            <strong>AR09TXHQASINUA</strong>
           </p>
-          <h5 class="cell__price">Ціна: 18400 грн</h5>
+          <h5 class="cell__price">Ціна: 17500 грн</h5>
+        </div>
+      </slide>
+
+      <slide>
+        <div class="col-sm-6 col-lg-3">
+          <div class="cell white">
+            <div class="cell__image" [style.background-image]="'url(/assets/conditioners/2.jpeg)'">
+              <img src="assets/placeholder.svg" alt="conditioner image">
+            </div>
+            <h5 class="cell__title">
+              Cooper&Hunter
+            </h5>
+            <p class="cell__text">
+              Код товару:
+              <br>
+              <strong>CH-S09FTXLA2-NG</strong>
+            </p>
+            <h5 class="cell__price">Ціна: 26280 грн</h5>
+          </div>
+        </div>
+      </slide>
+
+      <slide>
+        <div class="cell white">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/3.jpg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
+          <h5 class="cell__title">
+            AUX
+          </h5>
+          <p class="cell__text">
+            Код товару:
+            <br>
+            <strong>ASW-H07A4/FAR1</strong>
+          </p>
+          <h5 class="cell__price">Ціна: 10000 грн</h5>
         </div>
       </slide>
       <slide>
         <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/2.png" alt="conditioner image">
+          <div class="cell__image" [style.background-image]="'url(/assets/conditioners/4.jpeg)'">
+            <img src="assets/placeholder.svg" alt="conditioner image">
+          </div>
           <h5 class="cell__title">
-            Cooper&Hunter
+            GREE
           </h5>
           <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXE2-NG</strong>
+            Код товару:
+            <br>
+            <strong>GWH09QB-K3DNA2G</strong>
           </p>
-          <h5 class="cell__price">Ціна: 19640 грн</h5>
-        </div>
-      </slide>
-      <slide>
-        <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
-          <h5 class="cell__title">
-            Cooper&Hunter
-          </h5>
-          <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
-          </p>
-          <h5 class="cell__price">Ціна: 19700 грн</h5>
-        </div>
-      </slide>
-      <slide>
-        <div class="cell white">
-          <img class="cell__image" src="assets/conditioners/3.png" alt="conditioner image">
-          <h5 class="cell__title">
-            Cooper&Hunter
-          </h5>
-          <p class="cell__text">
-            Код товару:  <strong>CH-S07FTXQ2-NG</strong>
-          </p>
-          <h5 class="cell__price">Ціна: 19700 грн</h5>
+          <h5 class="cell__price">Ціна: 21000 грн</h5>
         </div>
       </slide>
     </carousel>
@@ -380,23 +419,43 @@
 <ng-template #prices>
   <div class="servicesModal">
     <div class="servicesModal__close" (click)="modalRef!.hide()"></div>
-    <h3 class="servicesModal__title">Монтаж кондиціонерів</h3>
+    <h3 class="servicesModal__title">Монтаж кондиціонерів (стандартна установка до 3-х м.)</h3>
     <div *ngFor="let item of installServices" class="servicesModal__item">
       <div class="servicesModal__option">{{item.option}}</div>
       <div class="separator"></div>
-      <div class="servicesModal__price">{{item.price}} грн</div>
+      <div class="servicesModal__price">{{item.price}} грн.</div>
+    </div>
+    <h3 class="servicesModal__title">Монтаж кондиціонерів на готові магістралі</h3>
+    <div *ngFor="let item of installOnExistingTubes" class="servicesModal__item">
+      <div class="servicesModal__option">{{item.option}}</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">{{item.price}} грн.</div>
+    </div>
+    <h3 class="servicesModal__title">Демонтаж</h3>
+    <div *ngFor="let item of uninstallServices" class="servicesModal__item">
+      <div class="servicesModal__option">{{item.option}}</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">{{item.price}} грн.</div>
     </div>
     <h3 class="servicesModal__title">Додаткові работи</h3>
     <div *ngFor="let item of additionalServices" class="servicesModal__item">
       <div class="servicesModal__option">{{item.option}}</div>
       <div class="separator"></div>
-      <div class="servicesModal__price">{{item.price}} грн</div>
+      <div class="servicesModal__price" [innerHTML]="item.price"></div>
     </div>
-    <h3 class="servicesModal__title">Сервісне обслуговування</h3>
-    <div *ngFor="let item of serviceGeneral" class="servicesModal__item">
+    <h3 class="servicesModal__title">
+      Прокладка фреономагістралі
+    </h3>
+    <div class="servicesModal__item">
+      <div class="servicesModal__option">до 3-х м.</div>
+      <div class="separator"></div>
+      <div class="servicesModal__price">2500 грн.</div>
+    </div>
+    <h3 class="servicesModal__title">Додатковий метр фреономагістралі</h3>
+    <div *ngFor="let item of additionalTube" class="servicesModal__item">
       <div class="servicesModal__option">{{item.option}}</div>
       <div class="separator"></div>
-      <div class="servicesModal__price">{{item.price}} грн</div>
+      <div class="servicesModal__price">{{item.price}} грн/м</div>
     </div>
   </div>
 </ng-template>
